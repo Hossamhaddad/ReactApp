@@ -3,8 +3,14 @@ import  './ExpenseItems.css'
 import Card from '../UI/Card';
 
 const ExpenseItems=(probs)=>{
-
+//     const [title,setTitle]=useState(probs.title);
+// console.log('expense items');
+// const clickHandler=()=>{
+// setTitle('updated');
+// console.log(title);
+// }
 return(
+    <li>
 <Card className="expense-item">
 <ExpenseDate date={probs.date} />
 <div className="expense-item__description">
@@ -12,6 +18,7 @@ return(
 <div className="expense-item__price">${probs.amount}</div>
 </div>
 </Card>
+</li>
 );
 
 }
